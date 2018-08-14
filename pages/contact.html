@@ -45,42 +45,49 @@
 
 
 <div class = "container-contact">
+    <section id = "contact">
+    <div class = "row">
+        <div class = "col-12">
+            <h3 class = "heading">Contact</h3>
+        </div>
+    </div>
+
+<!-- Form -->
     <div class = "container-contact-form">
-        <div class = "row">
-            <div class = "col-12">
-                <h3 class = "heading">Contact</h3>
-            </div>
+    <form>
+        <div class="form-group">
+        <label for="inputName">Name: </label>
+        <input type="text" class="form-control" id="inputName" placeholder="Name">
         </div>
 
-    <!-- Form -->
-    <form>
-            <div class="form-group">
-            <label for="inputName">Name: </label>
-            <input type="text" class="form-control" id="inputName" placeholder="Name">
-            </div>
+        <div class="form-group">
+            <label for="inputEmail">Email address: </label>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
 
-            <div class="form-group">
-                <label for="inputEmail">Email address: </label>
-                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
+        <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea class="form-control" rows="5" id="message"></textarea>
+        </div>
 
-            <div class="form-group">
-                <label for="message">Message: </label>
-                <textarea class="form-control" rows="5" id="message"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
+        <span>
+        <button type="submit" class="btn btn-primary" title = "Note: button does not actually sumbit">Submit</button>
+        </span>
     </form>
     </div>
-</div>
+</section>
+</div>  
+
+
+
 
 <!-- Footer -->
 <footer class ="footer">
     Copyright © 2018
     <a href="https://www.github.com" class = "footer-link">GitHub</a>
     <a href="https://www.google.com" class = "footer-link">Google</a>
-    <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"class = "footer-link">BootStrap Documentation</a>
+    <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" class = "footer-link">BootStrap Documentation</a>
 
 </footer>
 

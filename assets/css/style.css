@@ -33,24 +33,18 @@ body{
 .container-portfolio{
     max-width: 960px;
     margin:auto;
-    /* border: 1px solid lightblue; */
+    border: 1px solid lightblue;
     margin-top: 5px;
+    background-color: #ffffff;
 }
 
+.heading{
+    padding:10px;
+}
 
 /* About Me Page*/
 
 /* About Me Page Containers */
-
-
-
-.container-bio-upper{
-    /* border: 1px dashed orange; */
-}
-
-.container-about-me{
-    /* border: 1px dashed black; */
-}
 
 .container-bio-upper-left{
     /* border: 1px dashed purple; */
@@ -64,10 +58,6 @@ body{
     text-align:justify;
 }
 
-.container-bio-lower{
-    /* border: 1px dashed brown; */
-}
-
 .container-social-media{
     display:flex;
     flex-wrap: wrap;
@@ -76,10 +66,6 @@ body{
     margin:auto;
 }
 
-h3 heading{
-    padding: 10px;
-    margin-left: 10px;
-}
 
 #main-bio{
     /* border: 1px solid red; */
@@ -100,16 +86,22 @@ h3 heading{
 
 
 /* Social Media Icons */
-.fa-github,
-.fa-instagram,
-.fa-wechat{
-    color: gray;
+
+.social-share{
     font-size: 40px;
     word-wrap:break-word;
     text-overflow: ellipsis;
     margin: auto;
 }
 
+.fa-instagram{
+    color:#eb7836;
+
+}
+.fa-wechat{
+    color: #21df5a;
+
+}
 
 /* Photo Carousel */
 
@@ -147,8 +139,7 @@ h5{
 /* Portfolio */
 #portfolio{
     background-color: #ffffff;
-
-}
+    padding-bottom: 50px;}
 
 .container-portfolio-items{
     display: flex;
@@ -156,32 +147,81 @@ h5{
 }
 .portfolio-item{
     position: relative;
+    margin: auto;
 }
 
 .portfolio-item-caption{
     position: absolute;
     background-color: #4aaaa5;
     bottom: 30px;
-    width: 100%;
+    min-width: 100%;
     max-width: 100%;
     max-height: 30%;
     text-align: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
     color: #ffffff;
 }
-
-
 
 /* Contact */
 
 .container-contact-form{
     background-color: #ffffff;
-    margin:5px;
-    padding: 5px 15px 5px 15px;
+    padding:10px;
 }
 
 #message{
     min-height:50px;
     max-height:300px;
+}
+
+/* Scrollbar */
+html {
+    overflow-y: scroll; 
+}
+
+  /* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+/* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
