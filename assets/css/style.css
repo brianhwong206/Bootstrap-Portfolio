@@ -94,6 +94,15 @@ body{
     margin: auto;
 }
 
+.fa-github{
+    color: #000000;
+}
+
+.fa-linkedin{
+    color:#ffffff;
+    background-color: #0073b0;
+}
+
 .fa-instagram{
     color:#eb7836;
 
@@ -145,9 +154,12 @@ h5{
     display: flex;
     flex-wrap: wrap;
 }
+
 .portfolio-item{
     position: relative;
     margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .portfolio-item-caption{
