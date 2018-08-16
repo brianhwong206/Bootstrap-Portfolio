@@ -46,9 +46,14 @@ body{
 
 /* About Me Page Containers */
 
+.container-bio-upper{
+    width: 100%;
+}
+
 .container-bio-upper-left{
     /* border: 1px dashed purple; */
     margin: 5px;
+    width: 100%;
 }
 
 .container-bio-upper-right{
@@ -56,6 +61,7 @@ body{
     padding:5px;
     margin: 5px 10px 5px -10px;
     text-align:justify;
+    width:100%
 }
 
 .container-social-media{
@@ -115,7 +121,9 @@ body{
 /* Photo Carousel */
 
 #carouselExampleIndicators{
-    padding: 5px;
+    margin:20px;
+    padding: 10px;
+    box-shadow: 0 0 30px black;
 }
 
 h5{
@@ -128,6 +136,8 @@ h5{
     padding:5px;
     margin: 5px 10px 5px 10px;
 }
+
+
 
 /* Footer */
 
